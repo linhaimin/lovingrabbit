@@ -31,8 +31,12 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <link href='//fonts.googleapis.com/css?family=Racing+Sans+One' rel='stylesheet' type='text/css'>
 <link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
 <style type="text/css">
-	.caption p span.dates{
-		font-size: :28;
+	html, body{
+		width: 100%;
+	}
+	.caption p i.dates{
+		font-size: 28;
+		font-style: normal;
 	}
 </style>
 <!--webfonts-->
@@ -114,11 +118,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							<p>18<span class="glyphicon glyphicon-cloud" aria-hidden="true"></span>12<span class="glyphicon glyphicon-cloud" aria-hidden="true"></span>31</p>
 								<p>--</p>
 								<p>
-									<span class="dates" id="curYear">19</span>
+									<i class="dates" id="curYear">19</i>
 									<span class="glyphicon glyphicon-cloud" aria-hidden="true"></span>
-									<span class="dates" id="curMonth">05</span>
+									<i class="dates" id="curMonth">05</i>
 									<span class="glyphicon glyphicon-cloud" aria-hidden="true"></span>
-									<span class="dates" id="curDay">18</span>
+									<i class="dates" id="curDay">18</i>
 								</p>
 								<h3 id="howlong"></h3>
 							<div class="cap">
@@ -177,6 +181,17 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		  </div>
 	  </div>
 	</div>
+	<div>
+		<div class="clickMe">
+			<img style="width: 100%" src="images/190121008728.jpg">
+		</div>
+		<div class="clickMe">
+			<img style="width: 100%" src="images/c985bed2c5654874a4b1de7e0e678e99.jpeg">
+		</div>
+	</div>
+	<div>
+		<p class="clickMe" style="font-size: 32; margin-bottom: 15px; text-align: center">I Love You！</p>
+	</div>
 			
 	<!--footer-->
 	<script type="text/javascript">
@@ -194,6 +209,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		var days = Math.ceil(tempTimestamp / (24 * 60 * 60 * 1000));
 		$('#howlong').text('We have been in love for ' + days + ' days');
 		console.log(days)
+		$('.clickMe').click(function(){
+			alert('爱你，兔兔！爱你，黄嘉如！');
+		})
 	</script>
 </body>
 </html>
